@@ -2,9 +2,8 @@ import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
 import 'mapbox-gl/dist/mapbox-gl.css'
 import './App.css'
-import { Popup } from 'mapbox-gl';
 
-mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN //'pk.eyJ1Ijoic2FpdGVqYTQwNDEiLCJhIjoiY2xiNjA2aW15MDd6czNvb2EyYW13b3Y2MSJ9._F_fk7c2lkgjqMvzrYeJoQ';
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_TOKEN
 
 export default function App() {
   const mapContainer = useRef(null);
